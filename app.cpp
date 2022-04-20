@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Personaje
@@ -38,6 +39,17 @@ public:
         else
             throw invalid_argument ("Aqui solo se aceotan textos, o el poder tiene que tener 15 caracteres")
         return *this;
+    }
+
+    void mostrarPersonaje() {
+        cout << "------------------------------------------------------------" << endl;
+        cout << setw(40) << "----------------- NOMBRE -------------------" << endl;
+        cout << setw(40) << nombre << endl;
+        cout << setw(40) << "----------------- VIDA -------------------" << endl;
+        cout << setw(40) << vida << endl;
+        cout << setw(40) << "----------------- PODERES -------------------" << endl;
+        cout << setw(40) << poderes << endl;
+        cout << "------------------------------------------------------------" << endl;
     }
 
 private:
