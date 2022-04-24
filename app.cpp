@@ -60,6 +60,7 @@ private:
 
 int main(int argc, char const *argv[])
 {
-    
+    Personaje jugador();
+    jugador.mostrarPersonaje();
     return 0;
 }
